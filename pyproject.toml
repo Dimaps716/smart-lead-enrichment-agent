@@ -1,0 +1,28 @@
+[project]
+name = "smart-lead-enrichment-agent"
+version = "0.1.0"
+description = "Agente de enriquecimiento de leads usando FastAPI, Playwright y OpenAI."
+authors = [
+    {name = "Dima", email = "dimaps716@gmail.com"},
+]
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "pydantic-settings>=2.0.0",
+    "playwright>=1.35.0",
+    "openai>=0.27.0",
+    "python-dotenv>=1.0.0",
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
